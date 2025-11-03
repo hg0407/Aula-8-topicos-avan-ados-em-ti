@@ -1,0 +1,22 @@
+name: Pipeline de teste HTML CSS
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout código do repositório
+      uses: actions/checkout@v3
+      
+    - name: Validar arquivos HTML/CSS
+      run: |
+        echo "Pipeline rodando com HTML e CSS!"
