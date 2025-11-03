@@ -17,8 +17,8 @@ jobs:
     - name: Secrets Scan
       run: |
         echo "Pipeline inicial - validando código HTML/CSS"
-        echo "🔍 Verificando secrets no código..."
-        echo "✅ Secrets scan concluído!"
+        echo " Verificando secrets no código..."
+        echo " Secrets scan concluído!"
 
   # SAST - Static Application Security Testing
   sast:
@@ -30,10 +30,10 @@ jobs:
       
     - name: SAST Analysis
       run: |
-        echo "🔍 Executando SAST - Static Application Security Testing"
-        echo "✅ Verificando vulnerabilidades XSS..."
-        echo "✅ Analisando práticas de segurança..."
-        echo "✅ SAST concluído com sucesso!"
+        echo " Executando SAST - Static Application Security Testing"
+        echo " Verificando vulnerabilidades XSS..."
+        echo " Analisando práticas de segurança..."
+        echo " SAST concluído com sucesso!"
 
   # SCA - Software Composition Analysis
   sca:
@@ -45,8 +45,8 @@ jobs:
       
     - name: SCA Analysis
       run: |
-        echo "📦 Executando SCA - Software Composition Analysis"
-        echo "✅ Verificação de dependências concluída!"
+        echo "Executando SCA - Software Composition Analysis"
+        echo " Verificação de dependências concluída!"
 
   # IaC Scan
   iac-scan:
@@ -58,8 +58,8 @@ jobs:
       
     - name: IaC Security Scan
       run: |
-        echo "🛡️ Executando IaC Scan..."
-        echo "✅ Infraestrutura validada!"
+        echo " Executando IaC Scan..."
+        echo " Infraestrutura validada!"
 
   # DAST - Dynamic Application Security Testing
   dast:
@@ -71,13 +71,13 @@ jobs:
       
     - name: DAST Analysis
       run: |
-        echo "🔍 Executando DAST - Dynamic Application Security Testing"
-        echo "🚀 Iniciando servidor HTTP..."
+        echo " Executando DAST - Dynamic Application Security Testing"
+        echo " Iniciando servidor HTTP..."
         python -m http.server 8000 &
         sleep 3
-        echo "✅ Testando vulnerabilidades web..."
-        echo "✅ OWASP ZAP scan simulado..."
-        echo "✅ DAST concluído com sucesso!"
+        echo " Testando vulnerabilidades web..."
+        echo " OWASP ZAP scan simulado..."
+        echo " DAST concluído com sucesso!"
 
   # Deploy
   deploy:
@@ -86,6 +86,6 @@ jobs:
     steps:
     - name: Deploy Application
       run: |
-        echo "🚀 Deploy da aplicação..."
-        echo "✅ Pipeline de segurança concluída!"
-        echo "📊 Relatório de vulnerabilidades gerado!"
+        echo " Deploy da aplicação..."
+        echo " Pipeline de segurança concluída!"
+        echo "  Relatório de vulnerabilidades gerado!"
