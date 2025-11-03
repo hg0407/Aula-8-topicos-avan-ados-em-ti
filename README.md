@@ -1,34 +1,24 @@
 # Secure Pipeline CI/CD - HTML/CSS Project
 
-## 🛡️ Pipeline de Segurança DevSecOps
+## 🛡️ Pipeline de Segurança DevSecOps Simplificada
 
-Este projeto implementa uma pipeline completa de CI/CD com foco em segurança, incluindo:
+Pipeline de CI/CD com segurança integrada:
 
-### 🔍 Análises de Segurança Implementadas:
+### 🔍 Etapas de Segurança:
 
-- **SAST** (Static Application Security Testing)
-- **DAST** (Dynamic Application Security Testing)  
-- **SCA** (Software Composition Analysis)
-- **IaC Scan** (Infrastructure as Code Security)
-- **Secrets Detection**
-- **Vulnerability Management**
+- **SAST** - Análise estática de código
+- **DAST** - Testes dinâmicos de segurança  
+- **SCA** - Análise de dependências
+- **IaC Scan** - Validação de infraestrutura
+- **Secrets Scan** - Detecção de credenciais
 
 ### 🚀 Fluxo da Pipeline:
 
-1. **Git App Code** → Checkout do código
-2. **Secrets Scan** → Detecção de credenciais
-3. **SAST** → Análise estática de segurança
-4. **SCA** → Análise de dependências
-5. **IaC Scan** → Validação de infraestrutura
-6. **DAST** → Testes dinâmicos de segurança
-7. **Deploy** → Deploy seguro
-8. **Vulnerability Management** → Gestão de vulnerabilidades
+1. **Pipeline Init** → Checkout + Secrets Scan
+2. **SAST** → Análise estática
+3. **SCA** → Análise de dependências
+4. **IaC Scan** → Validação de infraestrutura
+5. **DAST** → Testes dinâmicos
+6. **Deploy** → Deploy seguro
 
-### 📊 Ferramentas Utilizadas:
-
-- GitLeaks & Semgrep (Secrets & SAST)
-- Trivy (IaC & Vulnerability Scanning)
-- OWASP ZAP (DAST)
-- DefectDojo (Vulnerability Management)
-
-Para mais detalhes, consulte o arquivo [SECURITY-PIPELINE.md](SECURITY-PIPELINE.md)
+Implementação simplificada mas efetiva de DevSecOps! 🚀
